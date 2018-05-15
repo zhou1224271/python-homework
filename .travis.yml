@@ -6,7 +6,10 @@ python: 3.6
 #   - pip install requests
 
 script:
-  - ./travis.sh
+  - ./check-target reverse-string
+  - ./check-target isogram
+  - ./check-target pangram
+
 
 # env:
 #   # $GITHUB_TOKEN environment variable
