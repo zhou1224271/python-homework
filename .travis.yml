@@ -6,10 +6,7 @@ python: 3.6
 #   - pip install requests
 
 script:
-  - ./check-target reverse-string
-  - ./check-target isogram
-  - ./check-target pangram
-
+  - ./check-target.py hello-world
 
 # env:
 #   # $GITHUB_TOKEN environment variable
