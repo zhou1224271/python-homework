@@ -2,7 +2,7 @@ language: python
 python: 3.6
 
 script:
-  - ./check-target.py hello-world
+  - ./check-target.py gigasecond
 
 notifications:
   email: false
