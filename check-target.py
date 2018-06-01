@@ -7,6 +7,7 @@ import subprocess
 import sys
 import tempfile
 import json
+import re
 
 
 def python_executable_name():
@@ -32,7 +33,8 @@ def check_assignment(name, test_file):
 
 
 def main():
-    exercises = [exercise.strip('/') for exercise in sys.argv[1:]]
+    exercises = [re.sub("^(\./)?python/", "", exercise).strip('/')
+                 for exercise in sys.argv[1:]]
     failures = []
     for exercise in exercises:
         test_file = glob.glob('./python/{}/*_test.py'.format(exercise))
