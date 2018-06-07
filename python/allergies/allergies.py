@@ -14,9 +14,5 @@ class Allergies(object):
 
     @property
     def lst(self):
-        allergies = []
-        for item in self.allergies:
-            if self.is_allergic_to(item):
-                allergies.append(item)
-
-        return allergies
+        return list(filter(self.is_allergic_to, self.allergies))
+    
