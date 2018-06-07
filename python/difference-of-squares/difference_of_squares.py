@@ -1,10 +1,12 @@
 def square_of_sum(count):
-    pass
+    total = sum(range(count + 1))
+    return total ** 2
 
 
 def sum_of_squares(count):
-    pass
+    l = [x ** 2 for x in range(count + 1)]
+    return sum(l)
 
 
 def difference(count):
-    pass
+    return square_of_sum(count) - sum_of_squares(count)
