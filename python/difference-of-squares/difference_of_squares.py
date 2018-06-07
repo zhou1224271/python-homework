@@ -1,10 +1,10 @@
 def square_of_sum(count):
-    total = sum(range(count + 1))
+    total = sum([x + 1 for x in range(count)])
     return total ** 2
 
 
 def sum_of_squares(count):
-    l = [x ** 2 for x in range(count + 1)]
+    l = [(x + 1) ** 2 for x in range(count)]
     return sum(l)
 
 
