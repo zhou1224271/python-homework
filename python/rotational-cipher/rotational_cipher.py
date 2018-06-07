@@ -12,11 +12,9 @@ def rotate(text, key):
     new_str = ""
     for c in text:
         if c in ascii_lowercase:
-            new_c = shift_char(c, ascii_lowercase, key)
-            new_str += new_c
+            new_str += shift_char(c, ascii_lowercase, key)
         elif c in ascii_uppercase:
-            new_c = shift_char(c, ascii_uppercase, key)
-            new_str += new_c
+            new_str += shift_char(c, ascii_uppercase, key)
         else:
             new_str += c
     return new_str
