@@ -3,6 +3,7 @@ python: 3.6
 
 script:
   - ./check-target.py hello-world
+  - ./check-target.py armstrong-numbers rotational-cipher difference-of-squares anagram allergies
 
 notifications:
   email: false
