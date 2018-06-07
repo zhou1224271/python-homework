@@ -1,12 +1,12 @@
 class Allergies(object):
-    def __init__(self, score):
-        self.allergies = ["eggs", "peanuts", "shellfish",
+    allergies = ["eggs", "peanuts", "shellfish",
                           "strawberries", "tomatoes", "chocolate", "pollen", "cats"]
+    def __init__(self, score):
         self.score = score
 
     def is_allergic_to(self, item):
-        if item in self.allergies:
-            n = self.allergies.index(item)
+        if item in Allergies.allergies:
+            n = Allergies.allergies.index(item)
             n = 2 ** n
             return n & self.score != 0
         else:
@@ -14,5 +14,5 @@ class Allergies(object):
 
     @property
     def lst(self):
-        return list(filter(self.is_allergic_to, self.allergies))
+        return list(filter(self.is_allergic_to, Allergies.allergies))
     
