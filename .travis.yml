@@ -4,6 +4,7 @@ python: 3.6
 script:
   - ./check-target.py reverse-string isogram pangram rna-transcription isbn-verifier hamming word-count
   - ./check-target.py gigasecond bob yacht run-length-encoding meetup
+  - ./check-target.py armstrong-numbers rotational-cipher difference-of-squares anagram allergies
 
 notifications:
   email: false
