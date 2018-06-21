@@ -6,6 +6,7 @@ script:
   - ./check-target.py gigasecond bob yacht run-length-encoding meetup
   - ./check-target.py armstrong-numbers rotational-cipher difference-of-squares anagram allergies
   - ./check-target.py series robot-simulator sieve atbash-cipher sum-of-multiples
+  - ./check-target.py acronym say largest-series-product kindergarten-garden grade-school
 
 notifications:
   email: false
