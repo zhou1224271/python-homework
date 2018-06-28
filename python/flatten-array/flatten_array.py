@@ -4,7 +4,7 @@ import collections
 def flatten(iterable):
     result = []
     for item in iterable:
-        if item == None:
+        if item is None:
             pass
         elif isinstance(item, tuple):
             result.extend(flatten(item))
