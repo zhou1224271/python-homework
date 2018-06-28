@@ -7,6 +7,7 @@ script:
   - ./check-target.py armstrong-numbers rotational-cipher difference-of-squares anagram allergies
   - ./check-target.py series robot-simulator sieve atbash-cipher sum-of-multiples
   - ./check-target.py acronym say largest-series-product kindergarten-garden grade-school
+  - ./check-target.py flatten-array roman-numerals space-age grains luhn
 
 notifications:
   email: false
