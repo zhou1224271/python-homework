@@ -1,7 +1,7 @@
 class SpaceAge(object):
     def __init__(self, seconds):
         self.seconds = seconds
-        self.earth = 31557600.0  # float 形式重要
+        self.earth = 31557600
 
     def on_mercury(self):
         return round(self.seconds / (0.2408467 * self.earth), 2)
